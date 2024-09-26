@@ -9,12 +9,16 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%2307030d' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%230c0710' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%230f0b13' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23120f16' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23151218' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 a {
@@ -76,4 +80,11 @@ button:focus-visible {
 
 .shadow {
   filter: drop-shadow(1px 1px 5px rgba(136, 134, 167, 0.6));
+}
+
+.backgroundImage {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%2307030d' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%230c0710' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%230f0b13' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23120f16' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23151218' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }

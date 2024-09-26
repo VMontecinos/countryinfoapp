@@ -13,7 +13,6 @@ const CountryList = () => {
           "http://localhost:3001/countryinfo/countries"
         );
         setCountries(response.data);
-        console.log(response.data);
       } catch (error) {
         console.error("Error fetching country list:", error);
       }

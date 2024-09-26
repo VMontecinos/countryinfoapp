@@ -26,8 +26,6 @@ app.get("/countryinfo/countries", async (req, res) => {
       return res.status(404).json({ message: "No countries found." });
     }
 
-    console.log(data);
-
     res.status(200).json(data);
   } catch (error) {
     console.error(error.message);
@@ -48,8 +46,6 @@ app.get("/countryinfo/country/:code", async (req, res) => {
   try {
     const countryBorderResponse = await axios.get(countryBorderURL);
     const borderCountries = countryBorderResponse.data.borders || []; // Get the borders of that country, or in case they don't have, send an empty array.
-
-    console.log(countryBorderResponse.data.commonName);
 
     const countryDataResponse = await axios.post(countryDataURL, {
       country: countryBorderResponse.data.commonName,
